@@ -21,6 +21,11 @@
 		4EC6CFFD21B6938C0046B8BA /* PinLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC6CFFC21B6938C0046B8BA /* PinLayout.framework */; };
 		4EC6CFFF21B69A290046B8BA /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC6CFFE21B69A290046B8BA /* Kingfisher.framework */; };
 		4EC6D00121B69AA30046B8BA /* ImageElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6D00021B69AA30046B8BA /* ImageElement.swift */; };
+		4EC6D00621B6B4320046B8BA /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6D00521B6B4320046B8BA /* Typography.swift */; };
+		4EC6D00821B6B4E70046B8BA /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6D00721B6B4E70046B8BA /* Color.swift */; };
+		4EC6D00A21B6BAD90046B8BA /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6D00921B6BAD90046B8BA /* Theme.swift */; };
+		4EC6D00C21B6C62B0046B8BA /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6D00B21B6C62B0046B8BA /* TextStyle.swift */; };
+		4EC6D00E21B6C6A70046B8BA /* FuckingSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6D00D21B6C6A70046B8BA /* FuckingSingleton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +45,11 @@
 		4EC6CFFC21B6938C0046B8BA /* PinLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PinLayout.framework; path = Carthage/Build/iOS/PinLayout.framework; sourceTree = "<group>"; };
 		4EC6CFFE21B69A290046B8BA /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		4EC6D00021B69AA30046B8BA /* ImageElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageElement.swift; sourceTree = "<group>"; };
+		4EC6D00521B6B4320046B8BA /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
+		4EC6D00721B6B4E70046B8BA /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		4EC6D00921B6BAD90046B8BA /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		4EC6D00B21B6C62B0046B8BA /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
+		4EC6D00D21B6C6A70046B8BA /* FuckingSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuckingSingleton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +86,7 @@
 		4EC6CFD121B65D040046B8BA /* Flo_DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
+				4EC6D00221B6A80F0046B8BA /* DesignSystem */,
 				4EC6CFE421B65E910046B8BA /* Feed */,
 				4EC6CFD221B65D040046B8BA /* AppDelegate.swift */,
 				4EC6CFD921B65D050046B8BA /* Assets.xcassets */,
@@ -116,6 +127,18 @@
 				4EC6CFF321B670C50046B8BA /* FlexLayout.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4EC6D00221B6A80F0046B8BA /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				4EC6D00521B6B4320046B8BA /* Typography.swift */,
+				4EC6D00721B6B4E70046B8BA /* Color.swift */,
+				4EC6D00921B6BAD90046B8BA /* Theme.swift */,
+				4EC6D00B21B6C62B0046B8BA /* TextStyle.swift */,
+				4EC6D00D21B6C6A70046B8BA /* FuckingSingleton.swift */,
+			);
+			path = DesignSystem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,13 +238,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EC6D00621B6B4320046B8BA /* Typography.swift in Sources */,
 				4EC6CFF921B6719A0046B8BA /* SubtitleElement.swift in Sources */,
+				4EC6D00821B6B4E70046B8BA /* Color.swift in Sources */,
+				4EC6D00E21B6C6A70046B8BA /* FuckingSingleton.swift in Sources */,
 				4EC6CFEA21B6627D0046B8BA /* FeedCardCell.swift in Sources */,
 				4EC6CFE621B65FE90046B8BA /* FeedEntities.swift in Sources */,
+				4EC6D00C21B6C62B0046B8BA /* TextStyle.swift in Sources */,
 				4EC6CFD521B65D040046B8BA /* FeedViewController.swift in Sources */,
 				4EC6CFFB21B671AA0046B8BA /* BodyElement.swift in Sources */,
 				4EC6CFF721B6718B0046B8BA /* TitleElement.swift in Sources */,
 				4EC6D00121B69AA30046B8BA /* ImageElement.swift in Sources */,
+				4EC6D00A21B6BAD90046B8BA /* Theme.swift in Sources */,
 				4EC6CFE821B660E60046B8BA /* FeedViewModel.swift in Sources */,
 				4EC6CFD321B65D040046B8BA /* AppDelegate.swift in Sources */,
 			);
