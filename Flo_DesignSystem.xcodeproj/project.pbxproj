@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		4EC6CFD321B65D040046B8BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6CFD221B65D040046B8BA /* AppDelegate.swift */; };
-		4EC6CFD521B65D040046B8BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6CFD421B65D040046B8BA /* ViewController.swift */; };
-		4EC6CFD821B65D040046B8BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EC6CFD621B65D040046B8BA /* Main.storyboard */; };
+		4EC6CFD521B65D040046B8BA /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6CFD421B65D040046B8BA /* FeedViewController.swift */; };
 		4EC6CFDA21B65D050046B8BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EC6CFD921B65D050046B8BA /* Assets.xcassets */; };
 		4EC6CFDD21B65D050046B8BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EC6CFDB21B65D050046B8BA /* LaunchScreen.storyboard */; };
+		4EC6CFE621B65FE90046B8BA /* FeedEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6CFE521B65FE90046B8BA /* FeedEntities.swift */; };
+		4EC6CFE821B660E60046B8BA /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6CFE721B660E60046B8BA /* FeedViewModel.swift */; };
+		4EC6CFEA21B6627D0046B8BA /* FeedCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6CFE921B6627D0046B8BA /* FeedCardCell.swift */; };
+		4EC6CFF421B670C50046B8BA /* FlexLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC6CFF321B670C50046B8BA /* FlexLayout.framework */; };
+		4EC6CFF721B6718B0046B8BA /* TitleElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6CFF621B6718B0046B8BA /* TitleElement.swift */; };
+		4EC6CFF921B6719A0046B8BA /* SubtitleElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6CFF821B6719A0046B8BA /* SubtitleElement.swift */; };
+		4EC6CFFB21B671AA0046B8BA /* BodyElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6CFFA21B671AA0046B8BA /* BodyElement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4EC6CFCF21B65D040046B8BA /* Flo_DesignSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flo_DesignSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EC6CFD221B65D040046B8BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4EC6CFD421B65D040046B8BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4EC6CFD721B65D040046B8BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4EC6CFD421B65D040046B8BA /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		4EC6CFD921B65D050046B8BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EC6CFDC21B65D050046B8BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EC6CFDE21B65D050046B8BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EC6CFE521B65FE90046B8BA /* FeedEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedEntities.swift; sourceTree = "<group>"; };
+		4EC6CFE721B660E60046B8BA /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		4EC6CFE921B6627D0046B8BA /* FeedCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCardCell.swift; sourceTree = "<group>"; };
+		4EC6CFF321B670C50046B8BA /* FlexLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FlexLayout.framework; path = Carthage/Build/iOS/FlexLayout.framework; sourceTree = "<group>"; };
+		4EC6CFF621B6718B0046B8BA /* TitleElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleElement.swift; sourceTree = "<group>"; };
+		4EC6CFF821B6719A0046B8BA /* SubtitleElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleElement.swift; sourceTree = "<group>"; };
+		4EC6CFFA21B671AA0046B8BA /* BodyElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyElement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EC6CFF421B670C50046B8BA /* FlexLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +53,7 @@
 			children = (
 				4EC6CFD121B65D040046B8BA /* Flo_DesignSystem */,
 				4EC6CFD021B65D040046B8BA /* Products */,
+				4EC6CFF221B670C40046B8BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +68,43 @@
 		4EC6CFD121B65D040046B8BA /* Flo_DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
+				4EC6CFE421B65E910046B8BA /* Feed */,
 				4EC6CFD221B65D040046B8BA /* AppDelegate.swift */,
-				4EC6CFD421B65D040046B8BA /* ViewController.swift */,
-				4EC6CFD621B65D040046B8BA /* Main.storyboard */,
 				4EC6CFD921B65D050046B8BA /* Assets.xcassets */,
 				4EC6CFDB21B65D050046B8BA /* LaunchScreen.storyboard */,
 				4EC6CFDE21B65D050046B8BA /* Info.plist */,
 			);
 			path = Flo_DesignSystem;
+			sourceTree = "<group>";
+		};
+		4EC6CFE421B65E910046B8BA /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				4EC6CFEB21B66A2D0046B8BA /* Elements */,
+				4EC6CFD421B65D040046B8BA /* FeedViewController.swift */,
+				4EC6CFE721B660E60046B8BA /* FeedViewModel.swift */,
+				4EC6CFE921B6627D0046B8BA /* FeedCardCell.swift */,
+				4EC6CFE521B65FE90046B8BA /* FeedEntities.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		4EC6CFEB21B66A2D0046B8BA /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				4EC6CFF621B6718B0046B8BA /* TitleElement.swift */,
+				4EC6CFF821B6719A0046B8BA /* SubtitleElement.swift */,
+				4EC6CFFA21B671AA0046B8BA /* BodyElement.swift */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		4EC6CFF221B670C40046B8BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4EC6CFF321B670C50046B8BA /* FlexLayout.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,6 +115,7 @@
 			buildConfigurationList = 4EC6CFE121B65D050046B8BA /* Build configuration list for PBXNativeTarget "Flo_DesignSystem" */;
 			buildPhases = (
 				4EC6CFCB21B65D040046B8BA /* Sources */,
+				4EC6CFF521B670DC0046B8BA /* Carthage */,
 				4EC6CFCC21B65D040046B8BA /* Frameworks */,
 				4EC6CFCD21B65D040046B8BA /* Resources */,
 			);
@@ -124,18 +168,46 @@
 			files = (
 				4EC6CFDD21B65D050046B8BA /* LaunchScreen.storyboard in Resources */,
 				4EC6CFDA21B65D050046B8BA /* Assets.xcassets in Resources */,
-				4EC6CFD821B65D040046B8BA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4EC6CFF521B670DC0046B8BA /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/FlexLayout.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/FlexLayout.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4EC6CFCB21B65D040046B8BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EC6CFD521B65D040046B8BA /* ViewController.swift in Sources */,
+				4EC6CFF921B6719A0046B8BA /* SubtitleElement.swift in Sources */,
+				4EC6CFEA21B6627D0046B8BA /* FeedCardCell.swift in Sources */,
+				4EC6CFE621B65FE90046B8BA /* FeedEntities.swift in Sources */,
+				4EC6CFD521B65D040046B8BA /* FeedViewController.swift in Sources */,
+				4EC6CFFB21B671AA0046B8BA /* BodyElement.swift in Sources */,
+				4EC6CFF721B6718B0046B8BA /* TitleElement.swift in Sources */,
+				4EC6CFE821B660E60046B8BA /* FeedViewModel.swift in Sources */,
 				4EC6CFD321B65D040046B8BA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +215,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4EC6CFD621B65D040046B8BA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4EC6CFD721B65D040046B8BA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4EC6CFDB21B65D050046B8BA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,6 +347,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Flo_DesignSystem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +368,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Flo_DesignSystem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
