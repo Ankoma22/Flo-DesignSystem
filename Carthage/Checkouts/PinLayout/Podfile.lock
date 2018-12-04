@@ -1,0 +1,35 @@
+PODS:
+  - Nimble (7.0.3)
+  - PinLayout (1.8.5)
+  - Quick (1.2.0)
+  - Reveal-SDK (17)
+  - SwiftLint (0.27.0)
+
+DEPENDENCIES:
+  - Nimble
+  - PinLayout (from `./`)
+  - Quick
+  - Reveal-SDK
+  - SwiftLint
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Nimble
+    - Quick
+    - Reveal-SDK
+    - SwiftLint
+
+EXTERNAL SOURCES:
+  PinLayout:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  PinLayout: a4b78dd50eb2e85c31b4418013461fa667764783
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  Reveal-SDK: a6df49f47319bd19a110c960c498af32df72c0af
+  SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
+
+PODFILE CHECKSUM: 62618887f8155abc1ed3348d9b676cf6915137e2
+
+COCOAPODS: 1.5.3

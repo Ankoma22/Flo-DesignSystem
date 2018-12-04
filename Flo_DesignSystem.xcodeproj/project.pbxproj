@@ -18,6 +18,9 @@
 		4EC6CFF721B6718B0046B8BA /* TitleElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6CFF621B6718B0046B8BA /* TitleElement.swift */; };
 		4EC6CFF921B6719A0046B8BA /* SubtitleElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6CFF821B6719A0046B8BA /* SubtitleElement.swift */; };
 		4EC6CFFB21B671AA0046B8BA /* BodyElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6CFFA21B671AA0046B8BA /* BodyElement.swift */; };
+		4EC6CFFD21B6938C0046B8BA /* PinLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC6CFFC21B6938C0046B8BA /* PinLayout.framework */; };
+		4EC6CFFF21B69A290046B8BA /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC6CFFE21B69A290046B8BA /* Kingfisher.framework */; };
+		4EC6D00121B69AA30046B8BA /* ImageElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6D00021B69AA30046B8BA /* ImageElement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		4EC6CFF621B6718B0046B8BA /* TitleElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleElement.swift; sourceTree = "<group>"; };
 		4EC6CFF821B6719A0046B8BA /* SubtitleElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleElement.swift; sourceTree = "<group>"; };
 		4EC6CFFA21B671AA0046B8BA /* BodyElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyElement.swift; sourceTree = "<group>"; };
+		4EC6CFFC21B6938C0046B8BA /* PinLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PinLayout.framework; path = Carthage/Build/iOS/PinLayout.framework; sourceTree = "<group>"; };
+		4EC6CFFE21B69A290046B8BA /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		4EC6D00021B69AA30046B8BA /* ImageElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageElement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EC6CFFF21B69A290046B8BA /* Kingfisher.framework in Frameworks */,
+				4EC6CFFD21B6938C0046B8BA /* PinLayout.framework in Frameworks */,
 				4EC6CFF421B670C50046B8BA /* FlexLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +103,7 @@
 				4EC6CFF621B6718B0046B8BA /* TitleElement.swift */,
 				4EC6CFF821B6719A0046B8BA /* SubtitleElement.swift */,
 				4EC6CFFA21B671AA0046B8BA /* BodyElement.swift */,
+				4EC6D00021B69AA30046B8BA /* ImageElement.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -102,6 +111,8 @@
 		4EC6CFF221B670C40046B8BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4EC6CFFE21B69A290046B8BA /* Kingfisher.framework */,
+				4EC6CFFC21B6938C0046B8BA /* PinLayout.framework */,
 				4EC6CFF321B670C50046B8BA /* FlexLayout.framework */,
 			);
 			name = Frameworks;
@@ -183,12 +194,15 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/FlexLayout.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/PinLayout.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/FlexLayout.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/PinLayout.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -207,6 +221,7 @@
 				4EC6CFD521B65D040046B8BA /* FeedViewController.swift in Sources */,
 				4EC6CFFB21B671AA0046B8BA /* BodyElement.swift in Sources */,
 				4EC6CFF721B6718B0046B8BA /* TitleElement.swift in Sources */,
+				4EC6D00121B69AA30046B8BA /* ImageElement.swift in Sources */,
 				4EC6CFE821B660E60046B8BA /* FeedViewModel.swift in Sources */,
 				4EC6CFD321B65D040046B8BA /* AppDelegate.swift in Sources */,
 			);

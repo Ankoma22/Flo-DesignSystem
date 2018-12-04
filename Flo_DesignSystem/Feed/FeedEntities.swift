@@ -17,8 +17,8 @@ struct FeedCard {
 
 enum FeedCardElement {
     case title(text: String)
-//    case subtitle(text: String)
-//    case body(text: String)
-//    case image(url: URL)
+    case subtitle(text: String)
+    case body(text: String)
+    case image(url: URL)
 //    case button(title: String)
 }

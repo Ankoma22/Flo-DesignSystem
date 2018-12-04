@@ -1,0 +1,25 @@
+# Xcode
+#
+
+.build/
+build/
+xcuserdata
+data/
+
+Pods/
+
+docs/1.2
+fastlane/README.md
+fastlane/report.xml
+fastlane/test_output
+
+TestProjects/cocoapods/ios/PinLayout-iOS.xcworkspace/
+TestProjects/cocoapods/macos/PinLayout-macOS.xcworkspace/
+TestProjects/cocoapods/tvos/PinLayout-tvOS.xcworkspace/
+
+TestProjects/carthage/ios/Cartfile.resolved
+TestProjects/carthage/ios/Carthage/
+
+TestProjects/swift-package-manager
+
+Example/PinLayoutExampleMacOS

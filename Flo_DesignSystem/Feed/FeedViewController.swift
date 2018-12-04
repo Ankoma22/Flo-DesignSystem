@@ -31,8 +31,9 @@ class FeedViewController: UIViewController {
         view.addSubview(tableView)
         tableView.delegate = self
         tableView.dataSource = self
-        
+        tableView.estimatedRowHeight = 10
         tableView.register(FeedCardCell.self, forCellReuseIdentifier: "FeedCell")
+        tableView.tableFooterView = UIView()
     }
     
     override func viewDidLayoutSubviews() {
@@ -43,16 +44,20 @@ class FeedViewController: UIViewController {
 
 extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return viewModel.numberOfSections()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.numberOfSections()
+        return viewModel.numberOfRowsInSection(section)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FeedCell", for: indexPath) as! FeedCardCell
         cell.set(feedCard: viewModel.feedCard(forRow: indexPath.row))
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
     }
 }
