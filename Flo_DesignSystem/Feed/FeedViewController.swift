@@ -15,10 +15,13 @@ class FeedViewController: UIViewController {
     }()
     
     private let viewModel: FeedViewModel
+    private var cellStyleProvider = FeedCardCellStyleProvider()
     
     init(viewModel: FeedViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
+        
+        title = "Feed"
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -34,11 +37,19 @@ class FeedViewController: UIViewController {
         tableView.estimatedRowHeight = 10
         tableView.register(FeedCardCell.self, forCellReuseIdentifier: "FeedCell")
         tableView.tableFooterView = UIView()
+        
+        let toggleThemeBarButtonItem = UIBarButtonItem(title: "Change Theme", style: .plain, target: self, action: #selector(toggleTheme))
+        navigationItem.leftBarButtonItem = toggleThemeBarButtonItem
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         tableView.frame = view.bounds
+    }
+    
+    @objc func toggleTheme() {
+        FuckingSigleton.instance.toggle()
+        tableView.reloadData()
     }
 }
 
@@ -54,6 +65,7 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FeedCell", for: indexPath) as! FeedCardCell
         cell.set(feedCard: viewModel.feedCard(forRow: indexPath.row))
+        cell.apply(style: cellStyleProvider.default)
         return cell
     }
     

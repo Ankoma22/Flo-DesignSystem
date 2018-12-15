@@ -10,8 +10,17 @@ import Foundation
 
 final class FuckingSigleton {
     static let instance = FuckingSigleton()
+    private var currentTheme: Theme = .light(theme: AppThemeImpl.light)
     
     var theme: Theme {
-        return .light(theme: AppThemeImpl.light)
+        return currentTheme
+    }
+    
+    func toggle() {
+        if case .light = currentTheme {
+            currentTheme = .dark(theme: AppThemeImpl.dark)
+        } else {
+            currentTheme = .light(theme: AppThemeImpl.light)
+        }
     }
 }

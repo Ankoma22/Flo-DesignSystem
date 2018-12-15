@@ -14,6 +14,7 @@ final class FeedCardCell: UITableViewCell {
     
     private let rootFlexContainer = UIView()
     private var elems = [UIView]()
+    private var textStyleProvider = TextStyleProvider()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -28,11 +29,17 @@ final class FeedCardCell: UITableViewCell {
         elems = feedCard.elements.map { element in
             switch element {
             case .title(let text):
-                return TitleElement(text: text)
+                let title = TitleElement(text: text)
+                title.apply(style: textStyleProvider.title)
+                return title
             case .subtitle(let text):
-                return SubtitleElement(text: text)
+                let subtitle = SubtitleElement(text: text)
+                subtitle.apply(style: textStyleProvider.subtitle)
+                return subtitle
             case .body(let text):
-                return BodyElement(text: text)
+                let body = BodyElement(text: text)
+                body.apply(style: textStyleProvider.body)
+                return body
             case .image(let url):
                 return ImageElement(url: url)
             }
@@ -50,7 +57,7 @@ final class FeedCardCell: UITableViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        rootFlexContainer.removeFromSuperview()
+        rootFlexContainer.subviews.forEach { $0.removeFromSuperview() }
     }
     
     override func layoutSubviews() {
@@ -67,5 +74,31 @@ final class FeedCardCell: UITableViewCell {
         contentView.pin.width(size.width)
         layout()
         return CGSize(width: contentView.frame.width, height: rootFlexContainer.frame.maxY)
+    }
+}
+
+
+struct FeedCardCellStyle {
+    let backgroundColor: Color
+}
+
+extension FeedCardCell {
+    func apply(style: FeedCardCellStyle) {
+        self.backgroundColor = style.backgroundColor.uiColor
+    }
+}
+
+final class FeedCardCellStyleProvider {
+    private var theme: Theme {
+        return FuckingSigleton.instance.theme
+    }
+    
+    var `default`: FeedCardCellStyle {
+        switch theme {
+        case .light(let t):
+            return FeedCardCellStyle(backgroundColor: t.palette.background)
+        case .dark(let t):
+            return FeedCardCellStyle(backgroundColor: t.palette.background)
+        }
     }
 }

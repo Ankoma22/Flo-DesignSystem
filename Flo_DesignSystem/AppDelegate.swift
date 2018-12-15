@@ -20,7 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = window
         let vm = FeedViewModel()
         let vc = FeedViewController(viewModel: vm)
-        self.window?.rootViewController = vc
+        let navVC = UINavigationController(rootViewController: vc)
+        self.window?.rootViewController = navVC
         self.window?.makeKeyAndVisible()
         
         return true
